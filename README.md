@@ -1,2 +1,2 @@
 # web-development
-Create the clock project
+Create the clock project.
