@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍔 Vinay's Restaurant</h1>
+    <p>Delicious Food at Your Doorstep</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+
+        <div class="item">
+            <img src="https://via.placeholder.com/200" alt="Burger">
+            <h3>Burger</h3>
+            <p>Price: ₹120</p>
+            <button onclick="order('Burger')">Order</button>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/200" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Price: ₹250</p>
+            <button onclick="order('Pizza')">Order</button>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/200" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Price: ₹180</p>
+            <button onclick="order('Pasta')">Order</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Vinay's Restaurant | All Rights Reserved</p>
+</footer>
+
+<script>
+    function order(item) {
+        alert(item + " ordered successfully!");
+    }
+</script>
+
+</body>
+</html>
